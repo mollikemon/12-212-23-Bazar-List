@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>বর্তমান বাজারদর</title>
+    <style>
+body{
+    background-image: url(at\ -\ Copy\ -\ Copy\ \(2\).jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.Emon{
+    margin-left: 400px;
+    margin-bottom: -40px;
+    /* background-color:rgb(138, 138, 9); */
+    width: 400px;
+    color: #38e01a;
+} .dan{margin-left: 100px;color: rgb(246, 61, 15);margin-left: 400px;}
+    </style>
+</head>
+<body>
+    <h1 class="dan">বর্তমান বাজারদর</h1>
+   <h1 id="will"></h1>
+  <script>
+    let kan =[
+    {na:"Emon",name:"1- chaul:1 kg = 70tk",mor:"2- alu:1 kg = 60tk" },
+    {na:"Emon",name:"3- bagun:1 kg = 50tk",mor:"4- tomato:1 kg = 50tk"},
+    {na:"Emon",name:"5- lobon:1 kg = 20tk",mor:"6- holud:50 grm = 20tk"},
+    {na:"Emon",name:"7- oll mosla = 100tk",mor:"8- sobin:1 kg = 200tk"},
+    {na:"Emon",name:"9- ................ = ",mor:"...Mot Bil= 570tk.." },
+];
+     
+kan .forEach(function(or){
+    document.getElementById("will").innerHTML+=
+    '<h3 class="'+or.na+'">'+or.name+'</h3>'+'<h3 class="'+or.na+'">'+or.mor+'</h3>'});
+
+  </script>
+    
+
+</body>
+</html>
